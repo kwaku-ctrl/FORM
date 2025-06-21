@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 60px;
+            background: color #f4f4f4;;
+            color: black;
+            margin: 3;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            font-weight: bolder;
+            width: 100%;
+            max-width: 400px;
+            padding: 50px;
+            border: 1.5px solid rgb(8, 147, 147);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 15px ;
+        }
+        label{
+            display: block;
+            margin-bottom: px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        input,textarea,select{
+            width: 100px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-style: italic;
+        }
+        input[type="submit"]{
+            background-color:#007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+
+        }
+        input[type="submit"] :active{transform: scale(0.97);
+            background-color: #0056b3;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/kb6267585@gmail.com" method="POST">
+        <input type="hidden" name="captcha" value="false">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" placeholder=" Enter or password" required>
+        <br>
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob" max="2007-06-18" required>
+        <br>
+        <label for="place of birth">Place of birth</label>
+        <input type="text" id="place of birth" name="place of birth" placeholder=" Entire place of birth" required>
+        <br>
+        <label for="tel"> Telephone number</label>
+        <input type="tel" id="tel" name="phone" required pattern="[0-9]{10}">
+        <br>
+        <label for="language">Preferred language</label>
+        <select name="language" id="language" placeholder="Choose your preffered language">
+        <option value="preferred language"> Choose your preferred language </option>
+        <option value="english">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="french">French</option>
+        </select>
+        <br>
+        <label for="skill">Skill</label>
+        <select name="skill" id="skill">
+            <option value=" Select your preferred skill">Select your preferred skille</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="java">JAVA</option>
+            <option value="c++">C++</option>
+            <option value="python">Python</option>
+        </select>
+        <br>
+        <textarea for="message" id="Message" placeholder="Type Your Message" ></textarea>
+        <br>
+        <input type="submit" placeholder="Submit">
+
+    </form>
+</body>
+</html> 
